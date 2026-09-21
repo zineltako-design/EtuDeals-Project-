@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>EtuDeals — Étudiants • Communauté • Échanges</title>
+<meta name="description" content="EtuDeals : la plateforme communautaire des étudiants et étrangers en Guinée. Logement, transport & kilos, marketplace seconde main, micro-services, bons plans et événements.">
+<meta name="theme-color" content="#E05A36">
+
+<!-- PWA -->
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/static/images/logo.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream: '#FBF9F5',
+          terracotta: '#E05A36',
+          'terracotta-dark': '#C6482A',
+          indigo: '#1A2B3C',
+          mint: '#2E8B57',
+          'mint-soft': '#D1EFE0'
+        },
+        fontFamily: { sans: ['Poppins', 'sans-serif'] },
+        borderRadius: { card: '16px' }
+      }
+    }
+  }
+</script>
+
+<!-- Icons -->
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+
+<!-- Theme CSS -->
+<link href="/static/css/theme.css" rel="stylesheet">
+</head>
+<body class="bg-cream text-indigo font-sans antialiased">
+
+<div id="toast-container"></div>
+
+<div id="app-header"></div>
+
+<main id="app-root" class="min-h-screen"></main>
+
+<div id="app-footer"></div>
+
+<div id="app-bottom-nav"></div>
+
+<script type="module" src="/static/js/main.js"></script>
+</body>
+</html>
